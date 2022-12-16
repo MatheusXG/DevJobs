@@ -1,5 +1,13 @@
+import { ThemeProvider } from './contexts/useTheme';
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <ThemeProvider>
+        <h1>Hello World</h1>
+      </ThemeProvider>
+    </>
+  );
 }
 
 export default App;
