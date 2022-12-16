@@ -5,8 +5,18 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      primary: string;
+      primary: {
+        color: string;
+        buttonBackground: string;
+        buttonHoverBackground: string;
+      };
+      secondary: {
+        color: string;
+        buttonBackground: string;
+        buttonHoverBackground: string;
+      };
       background: string;
+      white: string;
     };
   }
 }

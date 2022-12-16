@@ -1,3 +1,4 @@
+import { Button } from './components/Button';
 import { ThemeProvider } from './contexts/useTheme';
 import GlobalStyles from './styles/global';
 
@@ -5,7 +6,7 @@ function App() {
   return (
     <>
       <ThemeProvider>
-        <h1>Hello World</h1>
+        <Button color="primary">{'Load More'}</Button>
         <GlobalStyles />
       </ThemeProvider>
     </>
