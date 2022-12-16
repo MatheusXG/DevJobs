@@ -1,8 +1,5 @@
-import { DefaultTheme } from 'styled-components';
-
-export const light: DefaultTheme = {
+export const light = {
   colors: {
-    primary: '#550AB1',
-    background: '#141D2F',
+    background: '#F4F6F8',
   },
 };
