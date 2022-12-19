@@ -5,15 +5,11 @@ export default createGlobalStyle`
     margin:0;
     padding:0;
     outline:none;
-    box-sizing:border-box;
-    transition:  background-color .3s, color .3s;
-    
+    box-sizing:border-box;    
   }
 
   body * {
-    font-family: 'Kumbh Sans', sans-serif;
-    
-
+    font-family: ${({ theme }) => theme.font.family};
   }
     
   html {
@@ -21,10 +17,8 @@ export default createGlobalStyle`
   }
 
   html, body { 
-    height:100%; 
-    width:100%;
+    height: 100%; 
+    width: 100%;
     background-color: ${({ theme }) => theme.colors.background};
   }
-
- 
 `;

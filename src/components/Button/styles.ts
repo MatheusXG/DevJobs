@@ -24,22 +24,24 @@ const buttonModifiers = {
 };
 
 export const Button = styled.button<ButtonProps>`
-  max-width: 141px;
-  height: 48px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
+  ${({ theme, variant, fullWidth }) => css`
+    width: 14.1rem;
+    border-radius: ${theme.border.radius.xsmall};
+    cursor: pointer;
+    padding-block: ${theme.spacings.xsmall};
 
-  ${(props) => props.color && buttonModifiers[props.color]}
-  ${(props) => props.fullWidth && buttonModifiers.fullWidth}
+    ${!!variant && buttonModifiers[variant]};
+    ${!!fullWidth && buttonModifiers.fullWidth};
 
+    transition: background-color 0.3s;
 
-  transition: background-color 0.3s;
+    font-family: ${theme.font.family};
+    font-weight: ${theme.font.weight.bold};
+    font-size: ${theme.font.sizes.small};
+    line-height: ${theme.font.lineHeights.none};
 
-  font-family: 'Kumbh Sans';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-
-  margin: 5px 4px;
+    &:disabled {
+      cursor: not-allowed;
+    }
+  `};
 `;

@@ -8,7 +8,7 @@ interface ThemeProviderProps {
 }
 
 interface ThemeContextProps {
-  theme: string | null;
+  theme: 'dark' | 'light';
   toggleTheme: () => void;
 }
 
