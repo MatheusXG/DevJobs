@@ -1,6 +1,10 @@
+import { defaultTheme } from './default';
+
 export const light = {
+  ...defaultTheme,
   colors: {
     background: '#FFFFFF',
+    headingColor: '#19202D',
     white: '#FFFFFF',
     primary: {
       color: '#FFFFFF',
