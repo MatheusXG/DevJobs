@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 import * as S from './styles';
 
 export type ButtonProps = {
   color?: 'primary' | 'secondary';
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-  children?: React.ReactNode;
-};
+  children: React.ReactNode;
+} & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export const Button = ({
-  onClick,
   children,
   color = 'primary',
+  ...props
 }: ButtonProps) => {
   return (
-    <S.Button color={color} onClick={onClick}>
+    <S.Button color={color} {...props}>
       {children}
     </S.Button>
   );

@@ -22,10 +22,11 @@ const COLOR = {
 
 export const Button = styled.button<ButtonProps>`
   width: 141px;
-  height: 48px;
+
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  padding-block: 16px;
 
   ${(props) => props.color && COLOR[props.color]}
 
@@ -34,8 +35,12 @@ export const Button = styled.button<ButtonProps>`
   font-family: 'Kumbh Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 1;
 
-  margin: 23px 25px;
+  /* margin: 23px 25px; */
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
