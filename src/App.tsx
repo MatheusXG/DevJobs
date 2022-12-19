@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <ThemeProvider>
-        <Button color="primary">{'Load More'}</Button>
+        <Button color="primary" fullWidth={true}>
+          {'Load More'}
+        </Button>
         <GlobalStyles />
       </ThemeProvider>
     </>
