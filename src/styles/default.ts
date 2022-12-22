@@ -18,7 +18,8 @@ export const defaultTheme = {
       none: 1,
       small: '1.8rem',
       medium: '2.4rem',
-      large: '2.9rem',
+      large: '2.6rem',
+      xlarge: '2.9rem',
       huge: '3.4rem',
     },
   },
@@ -31,8 +32,8 @@ export const defaultTheme = {
     },
   },
   grid: {
-    container: '110rem',
-    gutter: '3.2rem',
+    container: '111rem',
+    gutter: '2.4rem',
   },
   spacings: {
     xxsmall: '0.8rem',

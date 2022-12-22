@@ -16,5 +16,7 @@ export const light = {
       buttonBackground: '#EFF0FC',
       buttonHoverBackground: '#C5C9F4',
     },
+    fontColor: '#19202D',
+    placeholderColor: '#8C9096',
   },
 };

@@ -9,7 +9,7 @@ export type ButtonProps = {
   variant?: 'primary' | 'secondary';
   children: React.ReactNode;
   fullWidth?: boolean;
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+} & ButtonTypes;
 
 export const Button = ({
   children,

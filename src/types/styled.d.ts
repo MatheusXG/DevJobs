@@ -27,6 +27,7 @@ export interface LineHeights {
   small: string;
   medium: string;
   large: string;
+  xlarge: string;
   huge: string;
 }
 
@@ -81,6 +82,8 @@ interface Colors {
     buttonBackground: string;
     buttonHoverBackground: string;
   };
+  placeholderColor: string;
+  fontColor: string;
 }
 
 declare module 'styled-components' {
