@@ -32,6 +32,7 @@ export interface LineHeights {
 }
 
 export interface Radius {
+  xxsmall: string;
   xsmall: string;
   small: string;
   medium: string;
@@ -71,7 +72,16 @@ export interface Transition {
 
 interface Colors {
   background: string;
-  headingColor: string;
+
+  white: string;
+  violet: string;
+  lightViolet: string;
+  veryDarkBlue: string;
+  midnight: string;
+  lightGray: string;
+  gray: string;
+  darkGray: string;
+
   primary: {
     color: string;
     buttonBackground: string;
@@ -82,8 +92,15 @@ interface Colors {
     buttonBackground: string;
     buttonHoverBackground: string;
   };
+
+  headingColor: string;
   placeholderColor: string;
   fontColor: string;
+
+  iconButtonColor: string;
+  labelInputColor: string;
+  backgroundInputCheckbox: string;
+  backgroundContainer: string;
 }
 
 declare module 'styled-components' {

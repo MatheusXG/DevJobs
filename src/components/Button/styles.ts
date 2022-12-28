@@ -18,6 +18,10 @@ const buttonModifiers = {
         theme.colors.secondary.buttonHoverBackground};
     }
   `,
+  none: css`
+    border: none;
+    background: none;
+  `,
   fullWidth: css`
     width: 100%;
   `,
@@ -25,8 +29,10 @@ const buttonModifiers = {
 
 export const Button = styled.button<ButtonProps>`
   ${({ theme, variant, fullWidth }) => css`
-    width: 14.1rem;
+    width: 100%;
+    height: 4.8rem;
     border-radius: ${theme.border.radius.xsmall};
+    border: 0;
     cursor: pointer;
     padding-block: ${theme.spacings.xsmall};
 

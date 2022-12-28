@@ -21,7 +21,6 @@ export const Wrapper = styled.header`
   background-image: url(${HeaderImg});
   background-repeat: no-repeat;
   background-size: cover;
-
   position: absolute;
 `;
 
@@ -31,5 +30,18 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-top: ${theme.spacings.large};
+  `}
+`;
+
+export const ContentFilter = styled.div`
+  ${({ theme }) => css`
+    display: grid;
+    grid-template-columns: 2fr 1.4fr 1fr 0.5fr;
+    align-items: center;
+
+    background: ${theme.colors.backgroundContainer};
+    border-radius: ${theme.border.radius.small};
+
+    padding-right: 1.6rem;
   `}
 `;

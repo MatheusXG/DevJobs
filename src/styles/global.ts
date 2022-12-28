@@ -16,6 +16,11 @@ export default createGlobalStyle`
       font-size: 62.5%;      
   }
 
+  input {
+    background-color: ${({ theme }) => theme.colors.background};
+
+  }
+
   html, body { 
     height: 100%; 
     width: 100%;

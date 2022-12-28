@@ -16,16 +16,17 @@ export const defaultTheme = {
     lineHeights: {
       normal: 'normal',
       none: 1,
-      small: '1.8rem',
+      xsmall: '1.8rem',
+      small: '2rem',
       medium: '2.4rem',
       large: '2.6rem',
       xlarge: '2.9rem',
       huge: '3.4rem',
     },
   },
-
   border: {
     radius: {
+      xxsmall: '0.3rem',
       xsmall: '0.5rem',
       small: '0.6rem',
       medium: '1.5rem',

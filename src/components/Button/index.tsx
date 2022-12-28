@@ -6,7 +6,7 @@ import * as S from './styles';
 export type ButtonTypes = ButtonHTMLAttributes<HTMLButtonElement>;
 
 export type ButtonProps = {
-  variant?: 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary' | 'none';
   children: React.ReactNode;
   fullWidth?: boolean;
 } & ButtonTypes;
